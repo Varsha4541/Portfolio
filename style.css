@@ -1,0 +1,264 @@
+/* Responsive and modern portfolio styles */
+body {
+  background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header, .navbar, .px-3 {
+  background: linear-gradient(90deg, #23272b 60%, #4e54c8 100%);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.nav-link {
+  transition: color 0.2s;
+}
+.nav-link:hover {
+  color: #ff7e5f !important;
+}
+
+.home {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 0;
+}
+.home-content {
+  flex: 1 1 300px;
+  padding: 1rem;
+}
+.home-img img {
+  box-shadow: 0 4px 24px rgba(0,0,0,0.15);
+  border: 6px solid #fff;
+  margin: 1rem;
+  max-width: 100%;
+}
+
+.social-media a {
+  margin: 0 10px;
+  display: inline-block;
+  border-radius: 50%;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.social-media a:hover {
+  transform: scale(1.12) translateY(-4px);
+  box-shadow: 0 4px 24px rgba(0,0,0,0.18);
+}
+
+.btn.butt {
+  background: linear-gradient(90deg, #4e54c8 0%, #8f94fb 100%);
+  color: #fff;
+  border: none;
+  border-radius: 24px;
+  padding: 0.6rem 1.6rem;
+  font-weight: 600;
+  margin-top: 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+  transition: background 0.2s, transform 0.2s;
+}
+.btn.butt:hover {
+  background: linear-gradient(90deg, #ff7e5f 0%, #feb47b 100%);
+  transform: scale(1.05);
+}
+
+.AboutMe .carousel-inner {
+  border-radius: 18px;
+  background: #fff;
+  box-shadow: 0 4px 32px rgba(0,0,0,0.10);
+  padding: 2rem 1rem;
+}
+.AboutMe .carousel-item h1 {
+  color: #4e54c8;
+  font-weight: 700;
+}
+
+.Projects-section .carousel {
+  margin-top: 2rem;
+  border-radius: 18px;
+  background: linear-gradient(135deg, #23272b 60%, #4e54c8 100%);
+  box-shadow: 0 4px 32px rgba(0,0,0,0.12);
+}
+.Projects-section .carousel-item {
+  color: #fff;
+  padding: 2rem 1rem;
+}
+.Projects-section .carousel-item h3 {
+  color: #ffb347;
+}
+
+.heading h1 {
+  font-size: 2.5rem;
+  color: #23272b;
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
+}
+
+/* Skills section */
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem 0;
+}
+.skills-list li {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  padding: 0.7rem 1.2rem;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  transition: background 0.2s, box-shadow 0.2s;
+}
+.skills-list li i {
+  font-size: 1.5rem;
+}
+.skills-list li:hover {
+  background: #f0f4ff;
+  box-shadow: 0 4px 16px rgba(78,84,200,0.10);
+}
+
+.Connect-section {
+  background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+  border-radius: 18px;
+  box-shadow: 0 4px 32px rgba(0,0,0,0.10);
+  padding: 2rem 1rem;
+  margin-top: 2rem;
+  text-align: center;
+}
+.Connect-section h1 {
+  color: #23272b;
+  font-weight: 700;
+  text-align: center;
+}
+.Connect-section .social-media {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+.Connect-section .social-media a {
+  background: #fff;
+  border-radius: 50%;
+  padding: 0.5rem;
+  margin: 0 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+  transition: background 0.2s, transform 0.2s;
+}
+.Connect-section .social-media a:hover {
+  background: #ffb347;
+  transform: scale(1.12) translateY(-4px);
+}
+
+.card-block {
+  background: linear-gradient(135deg, #f8fafc 80%, #e3f0ff 100%);
+  margin: 2.5rem auto;
+  padding: 2.5rem 2rem 2rem 2rem;
+  border-radius: 14px;
+  border: 1px solid #e0e7ef;
+  box-shadow: 0 2px 16px rgba(78,84,200,0.07);
+  max-width: 900px;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+.card-block:not(:last-child) {
+  margin-bottom: 3.5rem;
+}
+.card-block:hover {
+  box-shadow: 0 8px 32px rgba(78,84,200,0.13);
+  transform: translateY(-4px) scale(1.01);
+}
+.card-block h1 {
+  margin-top: 0.5rem;
+  margin-bottom: 1.2rem;
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #23272b;
+}
+.card-block hr {
+  margin: 0.5rem 0 1.5rem 0;
+  border: none;
+  border-top: 1.5px solid #e0e7ef;
+}
+
+/* Remove old section-specific backgrounds and paddings for uniformity */
+.Skills-section, .Projects-section, .Connect-section {
+  background: none;
+  box-shadow: none;
+  border-radius: 0;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (max-width: 900px) {
+  .home {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .home-img {
+    margin-top: 1.5rem;
+  }
+  .AboutMe .carousel-inner, .Projects-section .carousel {
+    padding: 1rem 0.2rem;
+  }
+  .card-block {
+    padding: 1.2rem 0.7rem;
+    margin: 1.2rem 0.2rem;
+    max-width: 98vw;
+  }
+  .card-block h1 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .heading h1 {
+    font-size: 1.5rem;
+  }
+  .home-content h3, .home-content h4 {
+    font-size: 1.1rem;
+  }
+  .btn.butt {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+  }
+  .skills-list li {
+    font-size: 0.95rem;
+    padding: 0.5rem 0.7rem;
+  }
+  .Connect-section {
+    padding: 1rem 0.2rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .aboutme-block {
+    padding: 1rem 0.7rem;
+    margin: 1rem 0.2rem;
+  }
+  .aboutme-block, .Skills-section {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 900px;
+  }
+  .aboutme-block h1, .Skills-section h1 {
+    text-align: center;
+  }
+  .aboutme-block > *, .Skills-section > * {
+    text-align: center;
+  }
+  .aboutme-block ul, .Skills-section ul {
+    margin: 0 auto 1.2rem auto;
+    display: block;
+    text-align: left;
+  }
+}
